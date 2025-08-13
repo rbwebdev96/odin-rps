@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <h1>{Rock Paper Scissors}</h1>
+  <p>The game is played between 2 players [you & the computer]. For each round,
+     you click one of the buttons to make the selection. The winner
+     earns a point after each round and the player who gets to 5 points first wins
+     the game. Click on the "Play again" button to restart the game.</p>
+  <div class="container">
+    <div class="image-container">
+     <img src="./images/rps-rock.jpeg" alt="rock-image">
+     <img src="./images/rps-paper.jpeg" alt="paper-image">
+     <img src="./images/rps-scissors.jpeg" alt="scissors-image">
+    </div>
+    <div class="btn-container">
+      <button id="btn-rock">Rock</button>
+      <button id="btn-paper">Paper</button>
+      <button id="btn-scissors">Scissors</button>
+    </div>  
+  </div>
+  <div class="result-container">
+    <div class="choice-score-container">
+      <div class="choice-score">
+        <div id="player-choice">?</div>
+        <span id="player-score">You:</span>
+        <span>0</span>
+      </div>
+      <div class="choice-score">
+        <div id="computer-choice">?</div>                                       
+        <span id="computer-score">Computer:</span>
+        <span>0</span>
+      </div>
+   </div> 
+    <div class="result">
+      <p id="round-result"></p>
+      <p id="final-result"></p>
+    </div>
+    <button id="play-button">Play again</button> 
+  </div>
+</body>
+</html> 
+
+
+ 
